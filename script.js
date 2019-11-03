@@ -46,7 +46,7 @@
     }
 
 
-    //Alle event listeners
+    //Alle event listeners1
 
     hands.addEventListener('click', counter);
     leeslijst.addEventListener("click", replaceImage);
