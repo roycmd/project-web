@@ -338,7 +338,7 @@ header {
 }
 
 .header-logo img {
-    content: url(/assets/transavia-logo-mobiel.png);
+    content: url(../assets/transavia-logo-mobiel.png);
 }
 
 
@@ -405,7 +405,7 @@ header {
 
 @media only screen and (min-device-width: 61em) {
 
-    .header-logo img {
+    .header-l2ogo img {
         content: url(../assets/transavia-logo.png);
     }
 
