@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: "NexaBold";
-    src: url("/project-web/assets/fonts/NexaBold.otf") format("otf");
+    src: url("../project-web/assets/fonts/NexaBold.otf") format("otf");
 }
 
 @font-face {
     font-family: "NexaRegular";
-    src: url("/project-web/assets/fonts/NexaRegular.otf") format("otf");
+    src: url("../project-web/assets/fonts/NexaRegular.otf") format("otf");
 }
 
 @font-face {
     font-family: "Transavicon";
-    src: url("/project-web/assets/fonts/transavicon.otf") format("otf");
+    src: url("../project-web/assets/fonts/transavicon.otf") format("otf");
 }
 /*font styling*/
 
