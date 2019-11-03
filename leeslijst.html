@@ -33,6 +33,41 @@
 
 
     <section class="container">
+        <aside class="filter" id="filter-test">
+            <h2>Filter</h2>
+
+            <section class="filter-block">
+                <h2>Genre</h2>
+                <form>
+                    <label><input type="checkbox" name="genre" value="spanning">Spanning</label>
+                    <label><input type="checkbox" name="genre" value="humor">Humor</label>
+                    <label><input type="checkbox" name="genre" value="thriller">Thriller</label>
+                    <label><input type="checkbox" name="genre" value="romantisch">Romantisch</label>
+                </form>
+            </section>
+
+            <section class="filter-block" id="duur">
+                <h2>Duur</h2>
+                <form id="myBtnContainer">
+                    <label><input type="checkbox" name="duur" value="kort" class="btn" onclick="filterSelection('kort')">Kort</label>
+                    <label><input type="checkbox" name="duur" value="normaal" class="btn" onclick="filterSelection('normaal')">Normaal</label>
+                    <label><input type="checkbox"  name="duur" value="lang" class="btn" onclick="filterSelection('lang')">Lang</label>
+                    <button class="btn active" onclick="filterSelection('all')"> Toon alles</button>
+                </form>
+            </section>
+
+            <section class="filter-block" id="sort">
+                <h2>Sorteer</h2>
+                <form>
+                    <label><input type="checkbox" name="sorteer" value="az">Alfabetisch A-Z</label>
+                    <label><input type="checkbox" name="sorteer" value="za">Alfabetisch Z-A</label>
+                    <label><input type="checkbox" name="sorteer" value="hoogst">Hoogst beoordeeld</label>
+                    <label><input type="checkbox" name="sorteer" value="eerst">Toevoegingsdatum (eerst)</label>
+                    <label><input type="checkbox" name="sorteer" value="laatst">Toevoegingsdatum (laatst)</label>
+                </form>
+            </section>
+
+        </aside>
         <section class="nieuw">
             <h2>Opgeslagen verhalen</h2>
             <section class="container-verhalen">
