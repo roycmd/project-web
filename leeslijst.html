@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verhalenwebsite</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" href="../assets/fonts//NexaBold.otf">
+    <link rel="stylesheet" href="../assets/fonts/NexaRegular.otf">
+
+</head>
+
+<body>
+    <header>
+        <a class="header-logo" href="/"><img src="/assets/transavia-logo-mobiel.png" alt="logo"></a>
+        <ul class="">
+            <li><a href="/"> Mijn leeslijst</a></li>
+            <li><a href="/login.html">Mijn profiel</a></li>
+        </ul>
+    </header>
+    <section class="landing">
+        <section class="searchbox">
+            <h1>99 verhalen</h1>
+            <form action="">
+                <input class="inputfield" type="text" placeholder="Zoek een verhaal">
+                <input class="button-primary" type="submit" id="primary-button">
+            </form>
+            <input class="button-primary" type="button" value="Filter" id="filter-button">
+        </section>
+    </section>
+
+
+    <section class="container">
+        <section class="nieuw">
+            <h2>Opgeslagen verhalen</h2>
+            <section class="container-verhalen">
+                <article class="verhaal" id="verhaal">
+                    <a href="/boers.html">
+                <img src="/assets/boers.jpg" alt="">
+                <h2>Boers</h2>
+                <p>3 min</p>
+            </a>
+                    <section class=misc><img class="leeslijst" src="/assets/leeslijstOn.svg" alt="">
+                        <img id="like" class="clap" src="/assets/clap.svg" alt="">
+                        <p id="counter">55</p>
+                    </section>
+                </article>
+                <script src="script.js"></script>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>

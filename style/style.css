@@ -1,0 +1,519 @@
+/*custom fonts*/
+
+@font-face {
+    font-family: "NexaBold";
+    src: url(../assets/fonts/NexaBold.otf);
+}
+
+@font-face {
+    font-family: "NexaRegular";
+    src: url(../assets/fonts/NexaRegular.otf);
+}
+
+@font-face {
+    font-family: "Transavicon";
+    src: url(../assets/fonts/transavicon.otf);
+}
+
+/*font styling*/
+
+h1,
+h2,
+
+p {
+    font-family: "NexaBold";
+}
+
+input,
+a,
+
+label {
+    font-family: "NexaRegular";
+    font-size: 1rem;
+    color: #606060;
+}
+
+h1 {
+    font-size: 2.735rem;
+    color: #00d66c;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: #606060;
+}
+
+p {
+    font-size: 1rem;
+    color: #606060;
+}
+
+.filter-block h2 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    height: 0.5rem
+}
+
+/* Header */
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.20);
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+header li a {
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem 1.5rem;
+}
+
+.header-logo {
+    padding: 0;
+    margin: auto 1rem;
+}
+
+.progress {
+    width: 100%;
+    position: fixed;
+    top: 3.8rem;
+    height: 1rem;
+    background: #F3E5D8;
+}
+
+.bar {
+    width: 0%;
+    position: fixed;
+    top: 3.8rem;
+    height: 1rem;
+    background: #FF3268;
+
+}
+
+/*Login en registreren*/
+
+.login {
+    background-color: #ffffff;
+    border-radius: .5rem;
+    height: 23rem;
+    padding: 1rem 2rem;
+    margin-top: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
+}
+
+.login input {
+    margin: 1rem 1rem;
+}
+
+
+input[type=email]:invalid {
+    border-color: #ff3268;
+}
+
+input[type=email]:placeholder-shown {
+    border-color: #91a3b7;
+}
+
+
+input[type=email]:valid {
+    border-color: #00d66c;
+}
+
+
+
+.landing-login {
+    display: grid;
+    background-image: url("/assets/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login label {
+    margin: 0;
+    padding: 0;
+}
+
+/*Background */
+
+body {
+    margin: 0;
+    margin-top: 4.4rem;
+}
+
+.landing {
+    display: grid;
+    background-image: url("/assets/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.nieuw {
+    background-color: #FFFFFF;
+}
+
+.nieuw h2 {
+    margin: 1rem;
+    text-decoration: none;
+}
+
+
+
+/*Zoek box*/
+
+.searchbox {
+    background-color: #ffffff;
+    border-radius: .5rem;
+    margin-right: auto;
+
+}
+
+.searchbox form {
+    width: 100%;
+
+}
+
+.inputfield {
+    width: 80%;
+    min-height: 2.5rem;
+    padding: 0 .5rem;
+    line-height: 2.3rem;
+    margin: 0 auto;
+    display: block;
+    border: .0625rem solid #91a3b7;
+    border-radius: .5rem;
+    transition: border .2s linear, color .2s linear;
+}
+
+.button-primary {
+    color: #ffffff;
+    background-color: #ff3268;
+    box-shadow: inset 0 -.1875rem .0625rem #ca2b55;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1rem;
+    padding: .4375rem 1.5rem .5625rem;
+    border-radius: 1.25rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    max-width: 10rem;
+    text-decoration: none;
+}
+
+#filter-button {
+    background-color: #2800A0;
+}
+
+/* Vanaf hier de styling van het filter*/
+
+.filter {
+    width: 100%;
+    float: right;
+    background-color: #F7F7F7;
+}
+
+#filter-test {
+    padding: 1rem;
+}
+
+.filter-block {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: #FF3268;
+}
+
+.filter-block h2 {
+    color: #FFFFFF;
+    padding: 0.5rem;
+    height: 0.5rem
+}
+
+#duur {
+    background-color: #00D66C;
+}
+
+#sort {
+    background-color: #2800A0;
+}
+
+label {
+    padding: .5rem 0;
+    width: 100%;
+    display: inline-block;
+    background-color: #FFFFFF;
+}
+
+
+
+/* Vanaf hier de verhalen op de overzichtspagina */
+
+.container-verhalen {
+    width: 100%;
+    background-color: #F3E5D8;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.verhaal {
+    margin: 2rem;
+    border-radius: 0.5rem;
+    min-width: 20rem;
+    width: 20%;
+    max-width: 20rem;
+    background-color: #ffffff;
+
+}
+
+.verhaal a {
+    text-decoration: none;
+}
+
+.verhaal p {
+    margin: 1rem;
+    display: flex;
+}
+
+.verhaal img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    max-height: 15rem;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.misc {
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+}
+
+
+.leeslijst {
+    padding: 1.5em 1em;
+    max-width: 2em;
+}
+
+.clap {
+    padding: 1em;
+    max-width: 3em;
+}
+
+
+.button {
+    max-width: 1.5rem;
+    display: inline;
+    padding-left: 20em;
+}
+
+header {
+    padding: .5rem 1rem;
+    height: 3.25rem;
+}
+
+.header-logo {
+    padding: 0;
+    margin: auto 0;
+}
+
+.header-logo img {
+    content: url(/assets/transavia-logo-mobiel.png);
+}
+
+
+
+.searchbox {
+    background-color: #ffffff;
+    border-radius: .5rem;
+    height: 17rem;
+    padding: 1rem;
+    margin-top: 2em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 8rem;
+
+}
+
+.filter {
+    display: none;
+}
+
+.boers,
+.jezus,
+.recept {
+    width: 100%;
+}
+
+/* Media query for tablet*/
+
+@media only screen and (min-device-width: 41em) {
+
+    header {
+        padding: .5rem 1rem;
+        height: 3.25rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+    }
+    .header-logo img {
+        content: url(/assets/transavia-logo.png);
+    }
+    .searchbox {
+        background-color: #ffffff;
+        border-radius: .5rem;
+        height: 17rem;
+        padding: 1rem 3rem;
+        margin-top: 6rem;
+        margin-left: 2rem;
+        margin-bottom: 8rem;
+        margin-right: auto;
+    }
+
+    .boers {
+        content: url(/assets/verhaal/tablet-boers.jpg);
+    }
+    .jezus {
+        content: url(/assets/verhaal/tablet-boers.jpg);
+    }
+    .recept {
+        content: url(/assets/verhaal/tablet-recept.jpg);
+    }
+}
+
+/* Media query for desktop */
+
+@media only screen and (min-device-width: 61em) {
+
+    .header-logo img {
+        content: url(/assets/transavia-logo.png);
+    }
+
+
+    /*Background */
+    body {
+        margin: 0;
+        width: 100%;
+    }
+
+    /*Grid Pagina indeling*/
+    .searchbox {
+        background-color: #ffffff;
+        border-radius: .5rem;
+        height: 15rem;
+        padding: 1rem 3rem;
+        margin-top: 6rem;
+        margin-left: 2rem;
+        margin-bottom: 8rem;
+        margin-right: auto;
+
+    }
+
+
+    /* Vanaf hier de verhalen op de overzichtspagina */
+    .container {
+        width: 100%;
+        display: flex;
+    }
+    .verhaal {
+        margin: 1rem;
+        border-radius: 0.5rem;
+        flex-grow: 1;
+        background-color: #ffffff;
+    }
+    .nieuw {
+        flex-grow: 1;
+        width: 80%;
+        float: left;
+    }
+    .filter {
+        float: right;
+        width: 20em;
+        display: block;
+    }
+    .filter-block {
+        margin-left: 0.5em;
+    }
+
+    .filter-block h2 {
+        color: #FFFFFF;
+        padding: 0.5rem;
+        height: 0.5rem
+    }
+    .boers {
+        content: url(/assets/verhaal/desktop-boers.jpg);
+    }
+    .jezus {
+        content: url(/assets/verhaal/jezus-desktop.jpg);
+    }
+    .recept {
+        content: url(/assets/verhaal/desktop-recept.jpg);
+    }
+    #filter-button {
+        display: none;
+    }
+}
+
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none;
+    /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 0.75em 1em;
+    cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+
+.btn:hover {
+    background-color: #00D66C;
+    color: white;
+}
+
+/* Add a dark background to the active button */
+
+.btn.active {
+    background-color: #00D66C;
+    color: white;
+}
+
+.empty{
+    display: block;
+    margin: auto;
+}

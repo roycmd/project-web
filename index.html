@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verhalenwebsite</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" href="../assets/fonts//NexaBold.otf">
+    <link rel="stylesheet" href="../assets/fonts/NexaRegular.otf">
+
+</head>
+
+<body>
+    <header>
+        <a class="header-logo" href="/"><img src="/assets/transavia-logo-mobiel.png" alt="logo"></a>
+        <ul class="">
+            <li><a href="/leeslijstleeg.html"> Mijn leeslijst</a></li>
+            <li><a href="/login.html">Mijn profiel</a></li>
+        </ul>
+    </header>
+
+    <section class="landing">
+        <section class="searchbox">
+            <h1>99 verhalen</h1>
+            <form action="">
+                <input class="inputfield" type="text" placeholder="Zoek een verhaal">
+                <input class="button-primary" type="submit" id="primary-button">
+            </form>
+            <input class="button-primary" type="button" value="Filter" id="filter-button">
+        </section>
+    </section>
+
+    <section class="container">
+        <aside class="filter" id="filter-test">
+            <h2>Filter</h2>
+
+            <section class="filter-block">
+                <h2>Genre</h2>
+                <form>
+                    <label><input type="checkbox" name="genre" value="spanning">Spanning</label>
+                    <label><input type="checkbox" name="genre" value="humor">Humor</label>
+                    <label><input type="checkbox" name="genre" value="thriller">Thriller</label>
+                    <label><input type="checkbox" name="genre" value="romantisch">Romantisch</label>
+                </form>
+            </section>
+
+            <section class="filter-block" id="duur">
+                <h2>Duur</h2>
+                <form id="myBtnContainer">
+                    <label><input type="checkbox" name="duur" value="kort" class="btn" onclick="filterSelection('kort')">Kort</label>
+                    <label><input type="checkbox" name="duur" value="normaal" class="btn" onclick="filterSelection('normaal')">Normaal</label>
+                    <label><input type="checkbox"  name="duur" value="lang" class="btn" onclick="filterSelection('lang')">Lang</label>
+                    <button class="btn active" onclick="filterSelection('all')"> Toon alles</button>
+                </form>
+            </section>
+
+            <section class="filter-block" id="sort">
+                <h2>Sorteer</h2>
+                <form>
+                    <label><input type="checkbox" name="sorteer" value="az">Alfabetisch A-Z</label>
+                    <label><input type="checkbox" name="sorteer" value="za">Alfabetisch Z-A</label>
+                    <label><input type="checkbox" name="sorteer" value="hoogst">Hoogst beoordeeld</label>
+                    <label><input type="checkbox" name="sorteer" value="eerst">Toevoegingsdatum (eerst)</label>
+                    <label><input type="checkbox" name="sorteer" value="laatst">Toevoegingsdatum (laatst)</label>
+                </form>
+            </section>
+
+        </aside>
+        <section class="nieuw">
+            <h2>Nieuwe verhalen</h2>
+            <section class="container-verhalen">
+                <article class="verhaal filterDiv kort" id="verhaal">
+                    <a href="/boers.html">
+                <img src="/assets/boers.jpg" alt="">
+                <h2>Boers</h2>
+                <p>3 min</p>
+            </a>
+                    <section class=misc><img class="leeslijst" src="/assets/leeslijst.svg" alt="">
+                        <img id="like" class="clap" src="/assets/clap.svg" alt="">
+                        <p id="counter">55</p>
+                    </section>
+
+                </article>
+
+                <article class="verhaal filterDiv lang" id="verhaal">
+                    <a href="/recept.html">
+                <img src="/assets/recept.jpg" alt="">
+                <h2>Recept</h2>
+                <p>6 min</p>
+            </a>
+                    <section class=misc><img class="leeslijst" src="/assets/leeslijst.svg" alt="">
+                        <img id="like" class="clap" src="/assets/clap.svg" alt="">
+                        <p id="counter">78</p>
+                    </section>
+                </article>
+
+                <article class="verhaal filterDiv lang">
+                    <a href="/jezus.html">
+                <img src="/assets/jezus.jpg" alt="">
+                <h2>Jezus</h2>
+                <p>4 min</p>
+            </a>
+                    <section class=misc><img class="leeslijst" src="/assets/leeslijst.svg" alt="">
+                        <img id="like" class="clap" src="/assets/clap.svg" alt="">
+                        <p id="counter">32</p>
+                    </section>
+                </article>
+
+            </section>
+            <h2>Aanbevolen verhalen</h2>
+            <section class="container-verhalen">
+                <article class="verhaal">
+                    <a href="/boers.html">
+                <img src="/assets/boers.jpg" alt="">
+                <h2>Boers</h2>
+                <p>3 min</p>
+            </a>
+                    <section class=misc><img class="leeslijst" src="/assets/leeslijst.svg" alt="">
+                        <img id="like" class="clap" src="/assets/clap.svg" alt="">
+                        <p id="counter">21</p>
+                    </section>
+
+                </article>
+                <section class="verhaal">
+                    <a href="/recept.html">
+                <img src="/assets/recept.jpg" alt="">
+                <h2>Recept</h2>
+                <p>6 min</p>
+            </a>
+                    <section class=misc><img class="leeslijst" src="/assets/leeslijst.svg" alt="">
+                        <img id="like" class="clap" src="/assets/clap.svg" alt="">
+                        <p id="counter">34</p>
+                    </section>
+                </section>
+                <section class="verhaal">
+                    <a href="/jezus.html">
+                <img src="/assets/jezus.jpg" alt="">
+                <h2>Jezus</h2>
+                <p>4 min</p>
+            </a>
+                    <section class=misc><img class="leeslijst" src="/assets/leeslijst.svg" alt="">
+                        <img id="like" class="clap" src="/assets/clap.svg" alt="">
+                        <p id="counter">55</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
