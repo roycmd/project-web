@@ -37,7 +37,7 @@
 
 
     function replaceImage() {
-        leeslijst.src = "assets/LeeslijstOn.svg";
+        leeslijst.src = "/project-web/assets/LeeslijstOn.svg";
     }
 
     function counter() {
